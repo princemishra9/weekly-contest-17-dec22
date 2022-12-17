@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My HTML Project</title>
+    <style>
+      /* navbar styles */
+      .navbar {
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        height: 60px;
+        padding: 0 20px;
+      }
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+      }
+
+      /* flexbox styles */
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .flex-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .flex-right img {
+        width: 500px;
+      }
+      .flex-right p {
+        font-size: 18px;
+      }
+
+      /* image flexbox styles */
+      .image-flex-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .image-flex-container img {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <!-- flexbox with info on the left and image on the right -->
+    <div class="flex-container">
+      <div class="flex-left">
+        <h2>Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel velit blandit, imperdiet urna in, porttitor ipsum. Proin ornare nulla metus, quis tristique massa ultricies a. Maecenas euismod dui et sapien pellentesque, a pretium massa tincidunt.</p>
+      </div>
+      <div class="flex-right">
+        <img src="https://via.placeholder.com/500x300" alt="Placeholder image">
+        <p>Image caption</p>
+      </div>
+    </div>
+
+    <!-- flexbox of images -->
+    <div class="image-flex-container">
+      <img src="https://via.placeholder.com/200x200" alt="Placeholder image">
+      <img src="https://via.placeholder.com/200x200" alt="Placeholder image">
+      <img src="https://via.placeholder.com/200x200" alt="Placeholder image">
+      <img src="https://via.placeholder.com/200x200" alt="Placeholder image">
